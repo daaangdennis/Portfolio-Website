@@ -1,18 +1,67 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto+Condensed:wght@400;700&display=swap');*/
+
 body{
     background-color: black;
 }
 
-a{
+li, a{
     color: white;
     text-decoration: none;
     font-family: 'Archivo Narrow', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
 }
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 4%;
+}
+
+.logoPic{
+    max-width: auto;
+    max-height: 80px;
+    margin-right: auto;
+}
+
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #81a5f9;
+}
+
+button{
+    color: #81a5f9;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    padding: 9px 25px;
+    background-color: black;
+    border: solid #81a5f9;
+    border-radius: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #81a5f9;
+}
+
 p{
     color: white;
 }
 
-/* Splash Screen */
+/* The following will be used for opening logo animation */
 .intro{
     position: fixed;
     z-index: 1;
@@ -35,7 +84,7 @@ p{
     transform: translate(-50%,-50%);
     color: #81a5f9;
     font-family: 'Archivo Narrow', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 5rem;
 }
 
@@ -78,3 +127,4 @@ p{
         left: -30px;
     }
 }
+/* End of opening logo animation styles */
