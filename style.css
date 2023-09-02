@@ -1,8 +1,15 @@
+body{
+    background-color: black;
+}
+
 a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: bold;
+}
+p{
+    color: white;
 }
 
 /* Splash Screen */
@@ -14,8 +21,12 @@ a{
     width: 100%;
     height: 100vh;
     background-color: black;
-    transition: 1s;
+    transition: opacity 1s ease;
 }
+.intro.fade{
+    opacity: 0;
+}
+
 
 .logo-header{
     position: absolute;
@@ -25,6 +36,7 @@ a{
     color: #81a5f9;
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: bold;
+    font-size: 5rem;
 }
 
 .logo{
@@ -42,27 +54,27 @@ a{
 
 .rectangle{
     width: 0px;
-    height: 5px;
+    height: 22px;
     background-color: #81a5f9;
 
     position: absolute;
-    top: 45%;
-    left: -5px;
+    top: 46.7%; /* Makes rectangle dead center of opening logo */
+    left: -30px;
     transform: translateY(-45%);
 }
 
 .rectangle.active{
     animation: elongate 2s linear;
-    width: 130px;
+    width: 362px;
 }
 
 @keyframes elongate{
     0% {
         width: 0px;
-        left: -5px;
+        left: -30px;
     }
     100% {
-        width: 130px;
-        left: -5px;
+        width: 362px;
+        left: -30px;
     }
 }
