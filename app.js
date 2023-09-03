@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
                 setTimeout(()=>{
                     intro.remove();
                 }, 500)
-            }, 2900)
+            }, 1860)
         }, 1000)
     })
 })
