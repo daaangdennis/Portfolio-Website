@@ -64,7 +64,7 @@ button:hover{
 
 /* About Me Page Styling */
 .about{
-    align-items: center;
+    align-items: start;
     display: flex;
     height: 75vh;
     padding: 2% 10%;
@@ -79,7 +79,7 @@ button:hover{
     max-width: auto;
     max-height: 65vh;
     border-radius: 25px;
-    filter: brightness(94%);
+    filter: brightness(105%);
     border: solid #81a5f9;
     box-shadow: 0 0 125px rgba(129, 165, 249, 0.6);
 
@@ -109,6 +109,10 @@ button:hover{
 .about-content a{
     color: #81a5f9;
     text-decoration: underline;
+}
+
+.socialIcons{
+    transform: scale(0.8);
 }
 
 /* End of About Me Page Styling */
