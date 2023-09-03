@@ -1,15 +1,34 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto+Condensed:wght@400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab&display=swap');
 
 body{
     background-color: black;
+    color: white;
 }
 
+/* About Me Page Styling */
+.about{
+    align-items: center;
+    display: flex;
+    height: 25vh;
+    padding: 0 10%;
+}
+
+.about-content h3{
+    font-family: 'Roboto Slab', serif;
+    color: #81a5f9;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* End of About Me Page Styling */
+
+
+/* Navigation Bar Styling */
 li, a{
     color: white;
     text-decoration: none;
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
 }
 
 header {
@@ -46,7 +65,6 @@ button{
     color: #81a5f9;
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 700;
-    font-size: 1.05rem;
     padding: 9px 25px;
     background-color: black;
     border: solid #81a5f9;
@@ -60,12 +78,10 @@ button:hover{
     transform: translateY(-3px);
     box-shadow: 0 0 55px rgba(129, 165, 249, 0.6)
 }
+/* End of Navigation Bar Styling */
 
-p{
-    color: white;
-}
 
-/* The following will be used for opening logo animation */
+/* Opening Logo Animation Styling */
 .intro{
     position: fixed;
     z-index: 1;
@@ -111,14 +127,14 @@ p{
     background-color: #81a5f9;
 
     position: absolute;
-    top: 46.7%; /* Makes rectangle dead center of opening logo */
+    top: 50%;
     left: -30px;
     transform: translateY(-45%);
 }
 
 .rectangle.active{
     animation: elongate 1.5s linear;
-    width: 362px;
+    width: 310px;
 }
 
 @keyframes elongate{
@@ -127,8 +143,9 @@ p{
         left: -30px;
     }
     100% {
-        width: 362px;
+        width: 310px;
         left: -30px;
     }
 }
-/* End of opening logo animation styles */
+/* End of Opening Logo Animation Styling */
+
