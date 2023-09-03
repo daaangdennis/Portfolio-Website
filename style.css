@@ -66,10 +66,24 @@ button:hover{
 .about{
     align-items: center;
     display: flex;
-    height: 25vh;
+    height: 75vh;
     padding: 2% 10%;
 }
+.right{
+    flex: 2;
+}
+.left{
+    flex: 1;
+}
+.profilePic{
+    max-width: auto;
+    max-height: 65vh;
+    border-radius: 25px;
+    filter: brightness(94%);
+    border: solid #81a5f9;
+    box-shadow: 0 0 125px rgba(129, 165, 249, 0.6);
 
+}
 .about-content h1{
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 700;
@@ -89,6 +103,7 @@ button:hover{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     margin: 1% 0;
+    line-height: 1.5;
 }
 
 .about-content a{
