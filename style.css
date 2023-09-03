@@ -1,26 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
 
 body{
     background-color: black;
     color: white;
 }
-
-/* About Me Page Styling */
-.about{
-    align-items: center;
-    display: flex;
-    height: 25vh;
-    padding: 0 10%;
-}
-
-.about-content h3{
-    font-family: 'Roboto Slab', serif;
-    color: #81a5f9;
-    font-weight: 400;
-}
-
-/* End of About Me Page Styling */
-
 
 /* Navigation Bar Styling */
 li, a{
@@ -80,6 +63,38 @@ button:hover{
     box-shadow: 0 0 55px rgba(129, 165, 249, 0.6)
 }
 /* End of Navigation Bar Styling */
+
+
+/* About Me Page Styling */
+.about{
+    align-items: center;
+    display: flex;
+    height: 25vh;
+    padding: 2% 10%;
+}
+
+.about-content h1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    color: #81a5f9;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.about-content h3{
+    font-family: 'Roboto Slab', serif;
+    color: #81a5f9;
+    font-weight: 400;
+    margin: 0;
+}
+
+.about-content p{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    margin: 1% 0;
+}
+
+/* End of About Me Page Styling */
 
 
 /* Opening Logo Animation Styling */
