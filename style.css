@@ -1,4 +1,6 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+@font-face { font-family: Village-Orbit; src: url("fonts/Village-Orbit.ttf"); } 
 
 body{
     background-color: black;
@@ -6,7 +8,7 @@ body{
 }
 
 /* Navigation Bar Styling */
-header {
+.navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -101,7 +103,7 @@ button:hover{
 
 .about-content p{
     font-family: 'Roboto Slab', serif;
-    font-weight: 700;
+    font-weight: 400;
     margin: 1% 0;
     line-height: 1.5;
 }
@@ -114,8 +116,74 @@ button:hover{
 .socialIcons{
     transform: scale(0.8);
 }
-
 /* End of About Me Page Styling */
+
+
+/* Projects Page Styling */
+
+.projectHeading{
+    text-align: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    color: #81a5f9;
+    margin-bottom: 40px;
+}
+
+.cardContainer{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card{
+    box-shadow: 0 8px 12px rgba(129, 165, 249, 0.6);
+    border: solid #81a5f9;
+    border-width: 1px;
+}
+
+.card-image{
+    width: 100%;
+    display: block;
+}
+
+.card-content{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #1a1a1a;
+    font-weight: 400;
+}
+
+.card-content > p:first-of-type{
+    margin-top: 0;
+}
+
+.card-content > p:last-of-type{
+    margin-bottom: 0;
+}
+
+.card-info{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: #1a1a1a;
+    color: #81a5f9;
+    font-weight: 700;
+}
+
+.card-link{
+    color: #81a5f9;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card-link:hover{
+    text-decoration: underline;
+}
+/* End of Projects Page Styling */
 
 
 /* Opening Logo Animation Styling */
