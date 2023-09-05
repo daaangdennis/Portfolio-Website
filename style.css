@@ -282,6 +282,21 @@ button:hover{
     box-shadow: 0 8px 12px rgba(129, 165, 249, 0.6);
     font-family: 'Roboto Slab', serif;
 }
+
+#text-container p{
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+#text-container a{
+    color: #81a5f9;
+    text-decoration: underline;
+}
+#text-container ul{
+    list-style-type: circle;
+}
+#text-container ul li{
+    margin-bottom: 10px;
+}
 /* End of AI Page Styling */
 
 
