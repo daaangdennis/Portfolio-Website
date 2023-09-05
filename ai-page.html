@@ -22,6 +22,61 @@
             <a class="contact" href="mailto:dennisdang80@yahoo.com"><button>Contact</button></a>
         </div>
 
-        <p>AI Page</p>
+        <div id="content-container">
+            <div id="canvas-container">
+                <h2>Feel free to draw on the canvas below!</h2>
+                <canvas id="drawing-canvas" width="800" height="700"></canvas>
+                <button id="clear-button">Clear Canvas</button>
+            </div>
+
+            <div id="text-container">
+                <p>
+                    Some text, some more text, even more text, and repeat.
+                    Some text, some more text, even more text, and repeat.
+                    Some text, some more text, even more text, and repeat.
+                    Some text, some more text, even more text, and repeat.
+                    Some text, some more text, even more text, and repeat.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            // JavaScript for drawing on the canvas
+            const canvas = document.getElementById('drawing-canvas');
+            const context = canvas.getContext('2d');
+            const clearButton = document.getElementById('clear-button');
+    
+            let drawing = false;
+    
+            canvas.addEventListener('mousedown', () => {
+                drawing = true;
+            });
+    
+            canvas.addEventListener('mouseup', () => {
+                drawing = false;
+                context.beginPath(); // Start a new path when the user releases the mouse button
+            });
+    
+            canvas.addEventListener('mousemove', draw);
+    
+            clearButton.addEventListener('click', clearCanvas);
+    
+            function draw(event) {
+                if (!drawing) return;
+    
+                context.lineWidth = 2;
+                context.lineCap = 'round';
+                context.strokeStyle = '#81a5f9';
+    
+                context.lineTo(event.clientX - canvas.getBoundingClientRect().left, event.clientY - canvas.getBoundingClientRect().top);
+                context.stroke();
+                context.beginPath();
+                context.moveTo(event.clientX - canvas.getBoundingClientRect().left, event.clientY - canvas.getBoundingClientRect().top);
+            }
+    
+            function clearCanvas() {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+            }
+        </script>
     </body>
 </html>
