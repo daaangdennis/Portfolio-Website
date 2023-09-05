@@ -243,6 +243,11 @@ button:hover{
 }
 .areas-of-interest ul li{
     margin-bottom: 20px;
+    line-height: 1.5;
+}
+.areas-of-interest a{
+    color: #81a5f9;
+    text-decoration: underline;
 }
 /* End of Qualifications Page Styling */
 
