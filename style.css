@@ -284,6 +284,12 @@ button:hover{
     font-weight: 400;
     margin: 5% 0;
     line-height: 1.5;
+
+}
+
+.service-description a{
+    color: #81a5f9;
+    text-decoration: underline;
 }
 /* End of Service Page Styling */
 
