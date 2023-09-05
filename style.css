@@ -243,8 +243,43 @@ button:hover{
 .areas-of-interest ul li{
     margin-bottom: 20px;
 }
-
 /* End of Qualifications Page Styling */
+
+
+/* Service Page Styling */
+.service{
+    display: flex;
+    gap: 40px;
+    padding: 2% 5%;
+}
+.org-logos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.service-description{
+    width: 50%;
+}
+
+.service-description h1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    color: #81a5f9;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+}
+
+.service-description p{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin: 5% 0;
+    line-height: 1.5;
+}
+/* End of Service Page Styling */
 
 
 /* AI Page Styling */
