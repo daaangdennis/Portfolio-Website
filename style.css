@@ -142,7 +142,8 @@ button:hover{
     box-shadow: 0 8px 12px rgba(129, 165, 249, 0.6);
     border: solid #81a5f9;
     border-width: 1px;
-    justify-content: baseline;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-image{
@@ -159,8 +160,13 @@ button:hover{
     font-weight: 400;
 }
 
+.card-content h2{
+    margin: 0;
+    color: #81a5f9;
+}
+
 .card-content > p:first-of-type{
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .card-content > p:last-of-type{
@@ -168,6 +174,7 @@ button:hover{
 }
 
 .card-info{
+    margin-top: auto;
     padding: 15px;
     display: flex;
     justify-content: space-between;
