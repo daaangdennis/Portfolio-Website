@@ -9,7 +9,8 @@ body{
 
 .switch{
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
+    right: 30px;
 }
 
 /* Navigation Bar Styling */
