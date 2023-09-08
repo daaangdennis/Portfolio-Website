@@ -17,3 +17,18 @@ window.addEventListener('DOMContentLoaded', ()=>{
         }, 1000)
     })
 })
+
+function toggleStyleSheet(){
+    var styleSheet = document.getElementById("mainStyleSheet");
+    var currentStyle = styleSheet.getAttribute("href");
+    var newStyle = currentStyle == "style.css" ? "style2.css" : "style.css";
+    styleSheet.setAttribute("href", newStyle);
+    localStorage.setItem("style", newStyle);
+}
+
+window.onload = function(){
+    var currentStyle = localStorage.getItem("style");
+    var styleSheet = document.getElementById("mainStyleSheet");
+    styleSheet.setAttribute("href", currentStyle);
+    
+}
