@@ -7,6 +7,11 @@ body{
     color: white;
 }
 
+.switch{
+    position: fixed;
+    bottom: 10px;
+}
+
 /* Navigation Bar Styling */
 .navbar {
     display: flex;
@@ -270,7 +275,10 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+}
+.org-logos img{
+    width: 50%;
+    height: auto;
 }
 
 .service-container{
