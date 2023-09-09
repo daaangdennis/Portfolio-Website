@@ -5,11 +5,12 @@ body{
     color: black;
 }
 button{
+    color: #f09dc9;
     font-family: 'industry-bold';
     font-size: 1.15rem;
     padding: 9px 25px;
     background-color: white;
-    border: solid black;
+    border: solid #f09dc9;
     border-radius: 25px;
     margin-left: 20px;
     cursor: pointer;
