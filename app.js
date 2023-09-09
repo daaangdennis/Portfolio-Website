@@ -37,13 +37,17 @@ function toggleStyleSheet(){
     localStorage.setItem("style", newStyle);
 
     var logopic = document.querySelector('.logoPic');
+    var icon = document.getElementById('mainIcon')
+
     if(newStyle == "style2.css")
     {
         logopic.setAttribute("src", "images/logo2.svg");
+        icon.setAttribute("href", "images/icon2.ico")
     }
     else
     {
         logopic.setAttribute("src", "images/logo.svg");
+        icon.setAttribute("href", "images/icon.ico")
     }
     
 }
@@ -52,18 +56,22 @@ window.onload = function(){
     var currentStyle = localStorage.getItem("style");
     var styleSheet = document.getElementById("mainStyleSheet");
     styleSheet.setAttribute("href", currentStyle);
+
     var logopic = document.querySelector('.logoPic');
+    var icon = document.getElementById('mainIcon')
 
     if(currentStyle == "style2.css")
     {
         logopic.setAttribute("src", "images/logo2.svg");
-        
+
+        icon.setAttribute("href", "images/icon2.ico")
         var intro = document.querySelector('.intro');
         intro.remove();
     }
     else
     {
         logopic.setAttribute("src", "images/logo.svg")
+        icon.setAttribute("href", "images/icon.ico")
 
         var intro = document.querySelector('.intro');
         var logoWords = document.querySelector('.logo');
