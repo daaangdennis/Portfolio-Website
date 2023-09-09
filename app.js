@@ -1,22 +1,33 @@
-let intro = document.querySelector('.intro');
-let logo = document.querySelector('.logo-header');
-let logoWords = document.querySelector('.logo');
-let rectangle = document.querySelector('.rectangle');
 
-window.addEventListener('DOMContentLoaded', ()=>{
-    setTimeout(()=>{
-        logoWords.classList.add('active');
+/*window.addEventListener('DOMContentLoaded', ()=>{
+    var intro = document.querySelector('.intro');
+    var logoWords = document.querySelector('.logo');
+    var rectangle = document.querySelector('.rectangle');
+    var styleSheet = document.getElementById("mainStyleSheet");
+    var currentStyle = styleSheet.getAttribute("href");
+    if(currentStyle == "style.css")
+    {
         setTimeout(()=>{
-            rectangle.classList.add('active');
+            logoWords.classList.add('active');
             setTimeout(()=>{
-                intro.classList.add('fade');
+                rectangle.classList.add('active');
                 setTimeout(()=>{
-                    intro.remove();
-                }, 500)
-            }, 1860)
-        }, 1000)
-    })
-})
+                    intro.classList.add('fade');
+                    setTimeout(()=>{
+                        intro.remove();
+                    }, 500)
+                }, 1860)
+            }, 1000)
+        })
+    }
+    else
+    {
+    }
+
+    
+
+
+})*/
 
 function toggleStyleSheet(){
     var styleSheet = document.getElementById("mainStyleSheet");
@@ -28,11 +39,11 @@ function toggleStyleSheet(){
     var logopic = document.querySelector('.logoPic');
     if(newStyle == "style2.css")
     {
-        logopic.setAttribute("src", "images/placeholder.png")
+        logopic.setAttribute("src", "images/logo2.svg");
     }
     else
     {
-        logopic.setAttribute("src", "images/logo.svg")
+        logopic.setAttribute("src", "images/logo.svg");
     }
     
 }
@@ -45,11 +56,30 @@ window.onload = function(){
 
     if(currentStyle == "style2.css")
     {
-        logopic.setAttribute("src", "images/placeholder.png")
+        logopic.setAttribute("src", "images/logo2.svg");
+        
+        var intro = document.querySelector('.intro');
+        intro.remove();
     }
     else
     {
         logopic.setAttribute("src", "images/logo.svg")
+
+        var intro = document.querySelector('.intro');
+        var logoWords = document.querySelector('.logo');
+        var rectangle = document.querySelector('.rectangle');
+        setTimeout(()=>{
+            logoWords.classList.add('active');
+            setTimeout(()=>{
+                rectangle.classList.add('active');
+                setTimeout(()=>{
+                    intro.classList.add('fade');
+                    setTimeout(()=>{
+                        intro.remove();
+                    }, 500)
+                }, 1860)
+            }, 1000)
+        })
     }
     
 }
