@@ -1,5 +1,5 @@
 
-/*window.addEventListener('DOMContentLoaded', ()=>{
+window.addEventListener('DOMContentLoaded', ()=>{
     var intro = document.querySelector('.intro');
     var logoWords = document.querySelector('.logo');
     var rectangle = document.querySelector('.rectangle');
@@ -20,14 +20,7 @@
             }, 1000)
         })
     }
-    else
-    {
-    }
-
-    
-
-
-})*/
+})
 
 function toggleStyleSheet(){
     var styleSheet = document.getElementById("mainStyleSheet");
@@ -68,26 +61,4 @@ window.onload = function(){
         var intro = document.querySelector('.intro');
         intro.remove();
     }
-    else
-    {
-        logopic.setAttribute("src", "images/logo.svg")
-        icon.setAttribute("href", "images/icon.ico")
-
-        var intro = document.querySelector('.intro');
-        var logoWords = document.querySelector('.logo');
-        var rectangle = document.querySelector('.rectangle');
-        setTimeout(()=>{
-            logoWords.classList.add('active');
-            setTimeout(()=>{
-                rectangle.classList.add('active');
-                setTimeout(()=>{
-                    intro.classList.add('fade');
-                    setTimeout(()=>{
-                        intro.remove();
-                    }, 500)
-                }, 1860)
-            }, 1000)
-        })
-    }
-    
 }
