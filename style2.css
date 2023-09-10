@@ -1,7 +1,12 @@
 @font-face { font-family: industry-bold; src: url("fonts/Industry-Bold.ttf");}
+@font-face { font-family: powerpuff; src: url("fonts/powerpuff\ girls\ font.ttf");}
+@font-face { font-family: adobe; src: url("fonts/Adobe\ Garamond\ Regular.otf");}
+@font-face { font-family: sundries; src: url("fonts/Sundries.otf");}
+
 
 body{
-    background-color: white;
+    background-attachment: fixed;
+    background-image: linear-gradient(white, #efd6e9, #97c9ec);
     color: black;
 }
 button{
@@ -19,7 +24,7 @@ button{
 
 button:hover{
     transform: translateY(-3px);
-    box-shadow: 0 0 55px rgba(240, 157, 201, 0.6)
+    box-shadow: 0 0 55px rgba(240, 157, 201, 0.6);
 }
 
 .switch{
@@ -64,3 +69,61 @@ button:hover{
     color: #f09dc9;
 }
 /* End of Navigation Bar Styling */
+
+
+/* About Me Page Styling */
+.about{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    padding: 2% 10%;
+}
+.right{
+    order: 1;
+    margin-bottom: 40px;
+}
+.left{
+    order: 2;
+}
+.profilePic{
+    max-width: auto;
+    max-height: 65vh;
+    border-radius: 25px;
+    border: solid #f09dc9;
+    box-shadow: 0 0 115px rgba(240, 157, 201, 0.9);
+
+}
+.about-content h1{
+    font-family: 'sundries';
+    color: #f09dc9;
+    font-size: 5.5rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.about-content h3{
+    font-family: 'adobe';
+    color: #f09dc9;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.about-content p{
+    font-family: 'adobe';
+    margin: 1% 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.about-content a{
+    color: #f09dc9;
+    text-decoration: underline;
+}
+
+.socialIcons{
+    transform: scale(0.8);
+    filter: invert(1);
+}
+/* End of About Me Page Styling */
