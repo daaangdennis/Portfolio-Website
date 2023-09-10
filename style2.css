@@ -97,6 +97,7 @@ button:hover{
     border-radius: 25px;
     border: solid #f09dc9;
     box-shadow: 0 0 115px rgba(240, 157, 201, 0.9);
+    filter: brightness(105%);
 
 }
 .about-content h1{
@@ -173,7 +174,6 @@ button:hover{
 .technical-skills{
     margin-bottom: 40px;
     border: solid #f09dc9;
-    border-radius: 15px;
     padding: 1em;
     box-shadow: 0 8px 12px rgba(240, 157, 201, 0.9);
 }
@@ -185,7 +185,6 @@ button:hover{
 
 .areas-of-interest{
     border: solid #f09dc9;
-    border-radius: 15px;
     padding: 1em;
     box-shadow: 0 8px 12px rgba(240, 157, 201, 0.9);
 }
@@ -233,7 +232,6 @@ button:hover{
     margin-top: 70px;
     margin-left: 20px;
     border: solid #f09dc9;
-    border-radius: 15px;
     padding: 1em;
     box-shadow: 0 8px 12px rgba(240, 157, 201, 0.9);
     font-family: 'adobe';
