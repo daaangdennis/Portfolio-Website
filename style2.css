@@ -130,6 +130,9 @@ button:hover{
 .about-content a{
     color: #f09dc9;
     text-decoration: underline;
+    text-shadow: 
+        -0.5px -0.5px 0 black, /* Top left */
+        -0.5px 0.5px 0 black; /* Bottom left */
 }
 
 .socialIcons{
@@ -236,7 +239,7 @@ button:hover{
 .qualifications{
     display: flex;
     gap: 40px;
-    padding: 2% 5%;
+    padding: 2% 10%;
     flex-direction: column;
     align-items: center;
 }
@@ -255,7 +258,6 @@ button:hover{
 }
 
 .qualifications-container{
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -296,6 +298,9 @@ button:hover{
 .areas-of-interest a{
     color: #f09dc9;
     text-decoration: underline;
+    text-shadow: 
+        -0.5px -0.5px 0 black, /* Top left */
+        -0.5px 0.5px 0 black; /* Bottom left */
 }
 /* End of Qualifications Page Styling */
 
@@ -304,7 +309,7 @@ button:hover{
 .service{
     display: flex;
     gap: 40px;
-    padding: 2% 5%;
+    padding: 2% 10%;
     flex-direction: column;
 }
 .org-logos{
@@ -349,6 +354,9 @@ button:hover{
 .service-description a{
     color: #f09dc9;
     text-decoration: underline;
+    text-shadow: 
+        -0.5px -0.5px 0 black, /* Top left */
+        -0.5px 0.5px 0 black; /* Bottom left */
 }
 /* End of Service Page Styling */
 
@@ -396,6 +404,9 @@ button:hover{
 #text-container a{
     color: #f09dc9;
     text-decoration: underline;
+    text-shadow: 
+        -0.5px -0.5px 0 black, /* Top left */
+        -0.5px 0.5px 0 black; /* Bottom left */
 }
 #text-container ul{
     list-style-type: circle;
