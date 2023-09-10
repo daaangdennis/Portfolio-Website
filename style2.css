@@ -1,5 +1,4 @@
 @font-face { font-family: industry-bold; src: url("fonts/Industry-Bold.ttf");}
-@font-face { font-family: powerpuff; src: url("fonts/powerpuff\ girls\ font.ttf");}
 @font-face { font-family: adobe; src: url("fonts/Adobe\ Garamond\ Regular.otf");}
 @font-face { font-family: sundries; src: url("fonts/Sundries.otf");}
 
@@ -127,3 +126,63 @@ button:hover{
     filter: invert(1);
 }
 /* End of About Me Page Styling */
+
+
+/* AI Page Styling */
+#content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2% 5%;
+    gap: 20px;
+}
+
+#canvas-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#canvas-container h2{
+    font-family: 'industry-bold';
+    font-weight: 700;
+    color: black;
+}
+
+#drawing-canvas {
+    border: 2px solid #f09dc9; 
+    margin-bottom: 15px;   
+}
+
+#text-container {
+    margin-top: 70px;
+    margin-left: 20px;
+    border: solid #f09dc9;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 0 8px 12px rgba(240, 157, 201, 0.9);
+    font-family: 'adobe';
+}
+
+#colored-text{
+    color: #f09dc9;
+    font-weight: 700;
+}
+
+#text-container p{
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+#text-container a{
+    color: #f09dc9;
+    text-decoration: underline;
+}
+#text-container ul{
+    list-style-type: circle;
+}
+#text-container ul li{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+/* End of AI Page Styling */
