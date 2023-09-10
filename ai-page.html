@@ -42,7 +42,7 @@
                     Since drawing and creating art has always been one of my favorite pastimes, I wanted to use AI to help bring
                     that experience to you on this webpage! The following are some prompts were used to create this page:
                 </p>
-                <p style="color: #81a5f9" >
+                <p id="colored-text">
                     To create the navigation bar:
                 </p>
                 <ul>
@@ -58,7 +58,7 @@
                     <li>Add list items for each navigation link: About, Projects, Qualifications, Service, AI Page.</li>
                     <li>Include a "Contact" button that links to "mailto:dennisdang80@yahoo.com."</li>
                 </ul>
-                <p style="color: #81a5f9" >
+                <p id="colored-text">
                     To create the text box and canvas:
                 </p>
                 <ul>
@@ -105,7 +105,19 @@
     
                 context.lineWidth = 2;
                 context.lineCap = 'round';
-                context.strokeStyle = '#81a5f9';
+                const currentStylesheet = document.getElementById('mainStyleSheet');
+                const stylesheetHref = currentStylesheet.getAttribute('href');
+
+                // Determine the pen color based on the stylesheet href
+                let penColor;
+                if (stylesheetHref.includes('style.css')) {
+                    // Default stylesheet
+                    penColor = '#81a5f9';
+                } else if (stylesheetHref.includes('style2.css')) {
+                    // Alternate stylesheet
+                    penColor = '#f09dc9'; // Change this to the desired color for the alternate stylesheet
+                }
+                context.strokeStyle = penColor;
     
                 context.lineTo(event.clientX - canvas.getBoundingClientRect().left, event.clientY - canvas.getBoundingClientRect().top);
                 context.stroke();
