@@ -12,6 +12,11 @@ body{
     right: 30px;
 }
 
+.colored-text{
+    color: #81a5f9;
+    font-weight: 700;
+}
+
 /* Navigation Bar Styling */
 .navbar {
     display: flex;
@@ -356,11 +361,6 @@ button:hover{
 #text-container p{
     line-height: 1.5;
     margin-bottom: 25px;
-}
-
-#colored-text{
-    color: #81a5f9;
-    font-weight: 700;
 }
 
 #text-container a{
