@@ -47,6 +47,10 @@ function toggleStyleSheet(){
 
 window.onload = function(){
     var currentStyle = localStorage.getItem("style");
+    if (currentStyle == null)
+    {
+        currentStyle = "style.css";
+    }
     var styleSheet = document.getElementById("mainStyleSheet");
     styleSheet.setAttribute("href", currentStyle);
 
