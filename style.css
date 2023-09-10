@@ -154,6 +154,12 @@ button:hover{
     border-width: 1px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease 0s;
+
+}
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(129, 165, 249, 0.8);
 }
 
 .card-image{
