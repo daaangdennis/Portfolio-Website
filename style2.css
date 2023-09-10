@@ -32,6 +32,11 @@ button:hover{
     right: 30px;
 }
 
+.colored-text{
+    color: #f09dc9;
+    font-weight: 700;
+}
+
 /* Navigation Bar Styling */
 .navbar {
     display: flex;
@@ -128,6 +133,76 @@ button:hover{
 /* End of About Me Page Styling */
 
 
+/* Qualifications Page Styling */
+.qualifications{
+    display: flex;
+    gap: 40px;
+    padding: 2% 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+}
+
+.resume{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.qualifications-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'adobe';
+    font-size: 1.2rem;
+    order: 1;
+}
+
+.qualifications-container p{
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.technical-skills{
+    margin-bottom: 40px;
+    border: solid #f09dc9;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 0 8px 12px rgba(240, 157, 201, 0.9);
+}
+.technical-skills ul{
+    column-count: 2;
+    column-gap: 20px;
+    list-style-type: circle;
+}
+
+.areas-of-interest{
+    border: solid #f09dc9;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 0 8px 12px rgba(240, 157, 201, 0.9);
+}
+.areas-of-interest ul{
+    list-style-type: circle;
+}
+.areas-of-interest ul li{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.areas-of-interest a{
+    color: #f09dc9;
+    text-decoration: underline;
+}
+/* End of Qualifications Page Styling */
+
+
 /* AI Page Styling */
 #content-container {
     display: flex;
@@ -162,11 +237,6 @@ button:hover{
     padding: 1em;
     box-shadow: 0 8px 12px rgba(240, 157, 201, 0.9);
     font-family: 'adobe';
-}
-
-#colored-text{
-    color: #f09dc9;
-    font-weight: 700;
 }
 
 #text-container p{
