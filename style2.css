@@ -35,6 +35,11 @@ button:hover{
 .colored-text{
     color: #f09dc9;
     font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 
+        -0.5px -0.5px 0 black, /* Top left */
+        -0.5px 0.5px 0 black; /* Bottom left */
+
 }
 
 /* Navigation Bar Styling */
@@ -132,6 +137,99 @@ button:hover{
     filter: invert(1);
 }
 /* End of About Me Page Styling */
+
+
+/* Projects Page Styling */
+
+.projectHeading{
+    text-align: center;
+    font-family: 'industry-bold';
+    color: #f09dc9;
+    margin-bottom: 40px;
+}
+
+.cardContainer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'adobe';
+    gap: 40px;
+    padding: 2% 10%;
+}
+
+.card{
+    box-shadow: 0 8px 12px rgba(240, 157, 201, 0.3);
+    border: solid #f09dc9;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    font-family: 'adobe';
+    transition: transform 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 55px rgba(240, 157, 201, 0.6);
+}
+
+.card-image{
+    width: 15%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 15px;
+    width: 60%;
+}
+
+.card-content h2{
+    margin: 0;
+    color: #f09dc9;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-shadow: 
+        0.5px -0.5px 0 black, /* Top right */
+        0.5px 0.5px 0 black; /* Bottom right */
+}
+
+.card-content p{
+    font-size: 1.2rem;
+}
+
+.card-content > p:first-of-type{
+    margin-top: 10px;
+}
+
+.card-content > p:last-of-type{
+    margin-bottom: 0;
+}
+
+.card-info{
+    margin-left: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #f09dc9;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 
+        0.5px -0.5px 0 black, /* Top right */
+        0.5px 0.5px 0 black; /* Bottom right */
+}
+
+.card-link{
+    color: #f09dc9;
+    text-decoration: none;
+}
+
+.card-link:hover{
+    text-decoration: underline;
+}
+/* End of Projects Page Styling */
 
 
 /* Qualifications Page Styling */
