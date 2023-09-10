@@ -1,6 +1,5 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
-@font-face { font-family: Village-Orbit; src: url("fonts/Village-Orbit.ttf"); } 
 
 body{
     background-color: black;
